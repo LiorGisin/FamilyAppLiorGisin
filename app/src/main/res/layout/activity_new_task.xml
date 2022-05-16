@@ -1,0 +1,179 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#ADC5C5C5"
+    android:orientation="vertical"
+    tools:context=".NewTask">
+
+
+    <TextView
+        android:fontFamily="@font/sunday_best"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:text="new task"
+        android:textSize="30dp"
+        android:textColor="#562F9C"
+        android:layout_gravity="center"
+        android:layout_marginTop="20dp"
+        android:id="@+id/titleTask"
+        ></TextView>
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@drawable/newtask_foreground"
+        android:layout_gravity="center"
+></ImageView>
+
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:layout_marginTop="20dp"
+        android:layout_width="330dp"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:hint="What is the task?"
+        android:layout_marginBottom="20dp">
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/description"
+            android:layout_width="350dp"
+            android:layout_height="wrap_content"
+
+            />
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/menu_dropdownUsers"
+        android:layout_width="350dp"
+        android:layout_height="wrap_content"
+        android:hint="Who is required to perform?"
+        android:layout_gravity="center"
+        style="@style/Widget.MaterialComponents.TextInputLayout.FilledBox.ExposedDropdownMenu"
+        android:padding="10dp"
+        >
+        <AutoCompleteTextView
+            android:layout_width="350dp"
+            android:layout_height="wrap_content"
+            android:inputType="none"
+            android:layout_gravity="center"
+            android:id="@+id/drop_itemsUsers"
+            ></AutoCompleteTextView>
+
+    </com.google.android.material.textfield.TextInputLayout>
+
+
+    <TextView
+        android:layout_marginTop="30dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="20dp"
+        android:text="Choose frequency:"
+        android:fontFamily="@font/lato_italic"
+        android:textColor="#562F9C"
+        android:textStyle="bold"
+        android:layout_marginBottom="10dp"
+        android:layout_gravity="center"
+        ></TextView>
+
+
+   <LinearLayout
+       android:layout_width="wrap_content"
+       android:layout_height="wrap_content">
+
+       <RadioGroup
+           android:id="@+id/rg1"
+           android:layout_marginLeft="35dp"
+           android:layout_width="wrap_content"
+           android:orientation="horizontal"
+           android:layout_height="wrap_content">
+
+           <RadioButton
+               android:id="@+id/once"
+               android:onClick="only_once"
+               android:layout_width="match_parent"
+               android:text="only once"
+               android:layout_height="match_parent"
+               android:layout_marginRight="20sp"></RadioButton>
+           <RadioButton
+               android:id="@+id/every_day"
+               android:onClick="every_day"
+               android:layout_width="match_parent"
+               android:text="every day"
+               android:layout_height="match_parent"
+               android:layout_marginRight="20sp"></RadioButton>
+           <RadioButton
+               android:id="@+id/once_a_week"
+               android:onClick="once_a_week"
+               android:layout_width="match_parent"
+               android:text="once a week"
+               android:layout_height="match_parent"
+               android:layout_marginRight="20sp"></RadioButton>
+       </RadioGroup>
+>
+   </LinearLayout>
+
+
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/menu_dropdown"
+        android:layout_width="350dp"
+        android:layout_gravity="center"
+        android:layout_height="wrap_content"
+        android:hint="Choose a day"
+        android:layout_marginTop="20dp"
+        android:visibility="invisible"
+        style="@style/Widget.MaterialComponents.TextInputLayout.FilledBox.ExposedDropdownMenu"
+        android:padding="10dp"
+        >
+        <AutoCompleteTextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:inputType="none"
+            android:id="@+id/drop_items"
+            android:visibility="invisible"
+            ></AutoCompleteTextView>
+
+    </com.google.android.material.textfield.TextInputLayout>
+
+
+
+
+
+    <Button
+        android:onClick="save"
+        android:layout_width="100dp"
+        android:layout_height="50dp"
+        android:layout_gravity="center"
+        android:layout_marginTop="20dp"
+        android:text="SAVE"
+        android:textSize="15dp"
+        android:backgroundTint="#5D7380"
+        android:textStyle="bold"
+        android:fontFamily="@font/sunday_best"
+        />
+
+    <Button
+        android:onClick="cancel"
+        android:layout_width="100dp"
+        android:layout_height="50dp"
+        android:layout_gravity="center"
+        android:layout_marginTop="20dp"
+        android:text="cancel"
+        android:textSize="15dp"
+        android:backgroundTint="#5D7380"
+        android:textStyle="bold"
+        android:fontFamily="@font/sunday_best"
+        />
+
+
+
+
+</LinearLayout>
+
+
+
+
+

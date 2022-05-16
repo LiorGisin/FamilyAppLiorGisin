@@ -1,0 +1,152 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".HomeScreen"
+    android:background="#B1C1CD"
+    android:orientation="vertical">
+
+    <TextView
+        android:id="@+id/title"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Welcome!"
+        android:textSize="30dp"
+        android:layout_gravity="center"
+        android:gravity="left"
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="30dp"
+        android:fontFamily="@font/lato_italic"
+        android:textColor="@color/white"
+        android:textStyle="bold"
+        ></TextView>
+
+    <TextView
+        android:id="@+id/familyName"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#5D7380"
+        android:text="family"
+        android:textSize="30dp"
+        android:layout_gravity="center"
+        android:gravity="center"
+        android:layout_marginTop="30dp"
+        android:fontFamily="@font/sunday_best"
+        android:textColor="@color/white"
+        android:textStyle="bold"
+        ></TextView>
+
+
+<LinearLayout
+    android:layout_gravity="center"
+    android:layout_marginRight="50dp"
+    android:layout_width="wrap_content"
+    android:orientation="horizontal"
+    android:layout_marginTop="50dp"
+    android:layout_height="wrap_content">
+
+    <ImageView
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:background="@drawable/calendar_foreground"
+        ></ImageView>
+
+    <Button
+        android:onClick="onClick"
+        android:id="@+id/events"
+        android:layout_width="150dp"
+        android:layout_height="100dp"
+        android:layout_gravity="center"
+        android:text="events"
+        android:textSize="15dp"
+        android:backgroundTint="#8E0B1B"
+        android:textStyle="bold"
+        android:fontFamily="@font/sunday_best"
+
+        />
+
+
+
+
+</LinearLayout>
+
+
+
+    <LinearLayout
+        android:layout_gravity="center"
+        android:layout_marginRight="50dp"
+        android:layout_width="wrap_content"
+        android:orientation="horizontal"
+        android:layout_marginTop="50dp"
+        android:layout_height="wrap_content">
+
+        <ImageView
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:background="@drawable/task_foreground"
+            ></ImageView>
+
+        <Button
+            android:onClick="onClick"
+            android:id="@+id/tasks"
+            android:layout_width="150dp"
+            android:layout_height="100dp"
+            android:layout_gravity="center"
+            android:text="tasks"
+            android:textSize="15dp"
+            android:backgroundTint="#562F9C"
+            android:textStyle="bold"
+            android:fontFamily="@font/sunday_best"
+            />
+
+
+
+
+    </LinearLayout>
+
+
+
+
+    <LinearLayout
+        android:layout_gravity="center"
+        android:layout_marginRight="50dp"
+        android:layout_width="wrap_content"
+        android:orientation="horizontal"
+        android:layout_marginTop="50dp"
+        android:layout_height="wrap_content">
+
+        <ImageView
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:background="@drawable/shopping_foreground"
+            ></ImageView>
+
+        <Button
+            android:onClick="onClick"
+            android:id="@+id/shopping"
+            android:layout_width="150dp"
+            android:layout_height="100dp"
+            android:layout_gravity="center"
+            android:text="shopping list"
+            android:textSize="15dp"
+            android:backgroundTint="#065926"
+            android:textStyle="bold"
+            android:fontFamily="@font/sunday_best"
+            />
+
+
+
+    </LinearLayout>
+
+
+
+
+        ></LinearLayout>
+
+
+
+
+

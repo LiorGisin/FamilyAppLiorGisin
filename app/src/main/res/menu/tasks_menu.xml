@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+
+
+    <item
+        android:title="my tasks only"
+        android:id="@+id/my_tasks"
+        android:orderInCategory="300"
+        ></item>
+
+    <item
+        android:title="everyone's tasks"
+        android:id="@+id/everyone"
+        android:orderInCategory="300"
+        ></item>
+
+    <item
+        android:title="tasks already done"
+        android:id="@+id/done"
+        android:orderInCategory="300"
+        ></item>
+
+    <item
+        android:title="frequency tasks"
+        android:id="@+id/frequency"
+        android:orderInCategory="300"
+        ></item>
+
+
+</menu>

@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+
+    <item
+        android:title="food"
+        android:id="@+id/food"
+        android:orderInCategory="300"
+        ></item>
+
+    <item
+        android:title="pharmacy"
+        android:id="@+id/pharmacy"
+        android:orderInCategory="300"
+        ></item>
+
+    <item
+        android:title="other"
+        android:id="@+id/other"
+        android:orderInCategory="300"
+        ></item>
+
+    <item
+        android:title="All"
+        android:id="@+id/all"
+        android:orderInCategory="300"
+        ></item>
+
+
+</menu>

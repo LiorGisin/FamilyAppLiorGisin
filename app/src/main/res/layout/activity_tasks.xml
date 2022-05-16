@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="#CDCBCB"
+    android:id="@+id/layouttt"
+    tools:context=".ItemsActivity">
+
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:orientation="horizontal"
+        android:layout_gravity="center"
+        android:layout_marginRight="50dp"
+        android:layout_height="wrap_content">
+
+        <ImageView
+            android:id="@+id/iconOfItem"
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:background="@drawable/task_foreground"
+            ></ImageView>
+
+        <TextView
+            android:id="@+id/title"
+            android:layout_width="match_parent"
+            android:layout_marginTop="20dp"
+            android:layout_height="wrap_content"
+            android:text="Tasks"
+            android:textSize="30dp"
+            android:textStyle="bold"
+            android:gravity="center"
+            android:textColor="#562F9C"
+            android:fontFamily="@font/sunday_best"
+            ></TextView>
+
+
+    </LinearLayout>
+
+
+
+    <ListView
+        android:id="@+id/lv"
+        android:layout_width="370dp"
+        android:layout_marginTop="20dp"
+        android:layout_height="500dp"
+        android:layout_gravity="center"
+ ></ListView>
+
+    <LinearLayout
+        android:layout_marginTop="20dp"
+        android:layout_width="match_parent"
+        android:layout_marginLeft="30dp"
+        android:layout_height="match_parent">
+
+        <Button
+            android:id="@+id/addAnItem"
+            android:onClick="new_item"
+            android:layout_width="45dp"
+            android:layout_height="46dp"
+            android:text="+"
+            android:layout_marginTop="20dp"
+            android:backgroundTint="#562F9C"
+            android:textSize="20dp"></Button>
+
+        <Button
+            android:id="@+id/empty"
+            android:onClick="empty_the_list"
+            android:layout_width="55dp"
+            android:layout_height="55dp"
+            android:layout_marginLeft="20dp"
+            android:layout_marginTop="20dp"
+            android:backgroundTint="#562F9C"
+            android:visibility="invisible"
+            android:background="@drawable/delete_item_foreground"
+            android:textSize="20dp"></Button>
+
+    </LinearLayout>
+
+
+
+
+</LinearLayout>

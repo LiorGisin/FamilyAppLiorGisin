@@ -1,0 +1,98 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_marginBottom="20dp"
+    tools:context=".ItemsAdapter">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#B8B8BD"
+        android:layout_marginBottom="10dp"
+        >
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_marginLeft="10dp"
+        android:layout_gravity="left"
+        android:layout_marginBottom="10dp"
+        android:layout_height="wrap_content">
+
+
+        <CheckBox
+            android:id="@+id/cb"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:focusable="false"
+            android:focusableInTouchMode="false"
+            ></CheckBox>
+
+
+        <LinearLayout
+            android:layout_width="250dp"
+            android:orientation="vertical"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:id="@+id/description"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="18dp"
+                android:text="description"
+                android:textStyle="bold"
+                android:layout_marginTop="5dp"
+                android:gravity="left"
+                ></TextView>
+
+
+            <TextView
+                android:id="@+id/performer"
+                android:textSize="16dp"
+                android:gravity="right"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:text="to:"
+                ></TextView>
+
+            <TextView
+                android:id="@+id/owner"
+                android:textSize="16dp"
+                android:gravity="right"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="from:"
+                ></TextView>
+
+
+        </LinearLayout>
+
+
+        <Button
+            android:id="@+id/delete1"
+            android:layout_width="60dp"
+            android:layout_height="60dp"
+            android:gravity="right"
+            android:layout_marginTop="10dp"
+            android:background="@drawable/delete_item_foreground"
+
+            android:focusable="false"
+            android:focusableInTouchMode="false"
+            >
+        </Button>
+
+
+
+
+    </LinearLayout>
+
+    </LinearLayout>
+
+
+</LinearLayout>

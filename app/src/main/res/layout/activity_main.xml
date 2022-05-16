@@ -1,0 +1,108 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity"
+    android:background="#BFD5B7"
+    android:orientation="vertical">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="family app"
+        android:textSize="40dp"
+        android:layout_gravity="center"
+        android:gravity="center"
+        android:layout_marginTop="30dp"
+        android:fontFamily="@font/sunday_best"
+        android:textColor="@color/white"
+        android:textStyle="bold"
+        android:layout_marginBottom="20dp"
+        ></TextView>
+
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="150dp"
+        android:background="@drawable/picture_family"
+        >
+
+    </ImageView>
+
+
+
+    <TextView
+        android:textStyle="bold"
+        android:layout_marginTop="30dp"
+        android:layout_width="wrap_content"
+        android:textSize="18dp"
+        android:layout_height="wrap_content"
+        android:text="Already registered?"
+        android:layout_gravity="center"
+        ></TextView>
+
+
+
+    <Button
+
+        android:fontFamily="@font/lato_italic"
+        android:onClick="log_in"
+        android:layout_width="150dp"
+        android:layout_height="100dp"
+        android:layout_gravity="center"
+        android:layout_marginTop="5dp"
+        android:layout_marginBottom="20dp"
+        android:text="LOG IN"
+        android:textSize="18dp"
+        android:backgroundTint="#354A3B"
+        android:textStyle="bold"
+
+        />
+
+
+
+    <TextView
+        android:textSize="18dp"
+        android:textStyle="bold"
+        android:layout_marginTop="10dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Want to create a new family account?"
+        android:layout_gravity="center"
+        ></TextView>
+
+    <Button
+        android:onClick="new_family"
+        android:layout_width="150dp"
+        android:layout_height="100dp"
+        android:layout_gravity="center"
+        android:layout_marginTop="5dp"
+        android:text="CREATE a NEW FAMILY"
+        android:textSize="14dp"
+        android:backgroundTint="#5D8061"
+        android:textStyle="bold"
+        android:fontFamily="@font/lato_italic"
+        />
+
+    <Button
+        android:onClick="sing_up"
+        android:layout_width="150dp"
+        android:layout_height="100dp"
+        android:layout_gravity="center"
+
+        android:text="add a family member to your FAMILY"
+        android:textSize="15dp"
+        android:backgroundTint="#5D8061"
+        android:textStyle="bold"
+        android:fontFamily="@font/lato_italic"
+        />
+
+    ></LinearLayout>
+
+
+
+
+
